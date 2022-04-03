@@ -140,6 +140,9 @@ elif Player_choice1 == Player_choice2:
 else: print('Player2 win')
 
 '''
+
+#ENG VERSION 
+
 import getpass
 
 Player_result1 = 0
@@ -148,32 +151,75 @@ Player_result2 = 0
 options = ['paper', 'stone', 'scissors']
 
 while Player_result1 != 3 and Player_result2 != 3:
-  
+
   The_players_choice_is_correct = True
   while The_players_choice_is_correct:
-    Player_choice1 = getpass.getpass('Player 1 give your choice: ' )
+    Player_choice1 = input ('Player 1 give your choice: ' )
     if Player_choice1 in options:
       The_players_choice_is_correct = False
 
   The_players_choice_is_correct = True
   while The_players_choice_is_correct :
-    Player_choice2 = getpass.getpass('Player 2 give your choice: ')
-    if Player_choice1 in options:
+    Player_choice2 = input ('Player 2 give your choice: ')
+    if Player_choice2 in options:
       The_players_choice_is_correct = False
 
-if Player_choice1 == 'paper' and Player_choice2 == 'stone' \
-or Player_choice1 == 'stone' and Player_choice2 =='scissors' \
-or Player_choice1 == 'scissors' and Player_choice2 == 'paper' :
-    print('Player1 win')
-    Player1_result += 1
-elif Player_choice1 == Player_choice2:
-  print('Draw')
-else: 
-  print('Player 2 win')
-  Player2_result += 1
+  if Player_choice1 == 'paper' and Player_choice2 == 'stone' \
+  or Player_choice1 == 'stone' and Player_choice2 =='scissors' \
+  or Player_choice1 == 'scissors' and Player_choice2 == 'paper' :
+      print('Player1 win')
+      Player_result1 += 1
+  elif Player_choice1 == Player_choice2 :
+    print('Draw')
+  else: 
+    print('Player 2 win')
+    Player_result2 += 1
 
 
 if Player_result1 > Player_result2:
   print ('The Player 1 wins whole game')
 else:
   print ('The Player 2 wins whole game')
+
+
+'''
+#POLSKA WERSJA  
+
+import getpass
+
+gracz1_wynik = 0
+gracz2_wynik = 0
+
+opcje =['papier', 'kamien', 'nozyczki']
+
+while gracz1_wynik !=3 and gracz2_wynik != 3:
+
+  wybor_gracza_jest_poprawny = True
+  while wybor_gracza_jest_poprawny :
+    wybor_gracza1 = input ('Gracz1 podaj swoj wybor:')
+    if wybor_gracza1 in opcje: 
+      wybor_gracza_jest_poprawny = False
+
+
+  wybor_gracza_jest_poprawny = True
+  while wybor_gracza_jest_poprawny :
+    wybor_gracza2 = input ('Gracz2 podaj swoj wybor:')
+    if wybor_gracza2 in opcje: 
+      wybor_gracza_jest_poprawny = False
+
+  if wybor_gracza1 == 'papier' and wybor_gracza2 == 'kamien' \
+  or wybor_gracza1 == 'kamien' and wybor_gracza2 == 'nozyczki' \
+  or wybor_gracza1 == 'nozyczki' and wybor_gracza2 == 'papier' :
+      print ('Gracz1 wygral')
+      gracz1_wynik += 1
+  elif wybor_gracza1 == wybor_gracza2 :
+    print ('remis')
+  else:
+    print ('Gracz2 wygral')
+    gracz1_wynik += 1
+
+if gracz1_wynik > gracz2_wynik:
+  print ('Gracz1 wygrywa całą grę')
+else:
+  print ('Gracz1 wygrywa całą grę')
+ '''
