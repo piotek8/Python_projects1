@@ -140,7 +140,7 @@ elif Player_choice1 == Player_choice2:
 else: print('Player2 win')
 
 '''
-
+'''
 #ENG VERSION 
 
 import getpass
@@ -154,13 +154,13 @@ while Player_result1 != 3 and Player_result2 != 3:
 
   The_players_choice_is_correct = True
   while The_players_choice_is_correct:
-    Player_choice1 = input ('Player 1 give your choice: ' )
+    Player_choice1 = getpass.getpass ('Player 1 give your choice: ' )
     if Player_choice1 in options:
       The_players_choice_is_correct = False
 
   The_players_choice_is_correct = True
   while The_players_choice_is_correct :
-    Player_choice2 = input ('Player 2 give your choice: ')
+    Player_choice2 = getpass.getpass ('Player 2 give your choice: ')
     if Player_choice2 in options:
       The_players_choice_is_correct = False
 
@@ -180,7 +180,7 @@ if Player_result1 > Player_result2:
   print ('The Player 1 wins whole game')
 else:
   print ('The Player 2 wins whole game')
-
+'''
 
 '''
 #POLSKA WERSJA  
@@ -223,3 +223,15 @@ if gracz1_wynik > gracz2_wynik:
 else:
   print ('Gracz1 wygrywa całą grę')
  '''
+
+#DEF DEF DEF DEF DEF DEF DEF
+
+def napisz():
+  print ('Adam')
+  print ('it is')  
+  print ('fine')
+
+napisz()
+napisz()
+napisz()
+napisz()
